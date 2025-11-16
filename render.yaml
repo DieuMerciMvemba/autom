@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: autom
+    env: docker
+    region: oregon 
+    plan: free 
+    branch: main 
+    numInstances: 1
+    healthCheckPath: /
+    envVars:
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        fromDatabase:
+          name: automDB
+          property: host
+      - key: DB_POSTGRESDB_DATABASE
+        fromDatabase:
+          name: automDB
+          property: database
+      - key: DB_POSTGRESDB_PORT
+        fromDatabase:
+          name: automDB
+          property: port
+      - key: DB_POSTGRESDB_USER
+        fromDatabase:
+          name: automDB
+          property: user
+      - key: DB_POSTGRESDB_PASSWORD
+        fromDatabase:
+          name: automDB
+          property: password
+      - key: PORT
+        value: 5678
+      - key: N8N_LOG_LEVEL
+        value: info
+      - key: GENERIC_TIMEZONE
+        value: Africa/Kinshasa
+      - key: TZ
+        value: Africa/Kinshasa
+      - key: N8N_DEFAULT_LOCALE
+        value: fr
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
+
+databases:
+  - name: automDB
+    region: oregon 
+    plan: free
