@@ -28,7 +28,7 @@ docker-compose up
 
 Cliquez sur le bouton ci-dessous pour déployer automatiquement sur Render :
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=<votre-repo-url>)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 ## 📝 Configuration
 
