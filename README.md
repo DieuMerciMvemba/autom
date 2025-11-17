@@ -1,6 +1,6 @@
-# Autom - Plateforme d'Automatisation
+# Autom — Plateforme d'automatisation
 
-Autom est une plateforme d'automatisation de workflows basée sur **n8n**, déployée en République Démocratique du Congo avec interface en français.
+Autom est une instance de n8n configurée pour un usage francophone et pour la zone horaire de la RDC.
 
 ## 🚀 Caractéristiques
 
@@ -26,7 +26,7 @@ docker-compose up
 
 ## 🌐 Déploiement sur Render
 
-Cliquez sur le bouton ci-dessous pour déployer automatiquement sur Render :
+Remplacez `<votre-repo-url>` par l'URL de votre dépôt GitHub puis cliquez sur le bouton ci-dessous pour déployer :
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
