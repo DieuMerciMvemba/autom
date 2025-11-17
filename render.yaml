@@ -4,7 +4,7 @@ services:
     env: docker
     region: oregon 
     plan: free 
-    branch: main 
+    branch: coder_one 
     numInstances: 1
     healthCheckPath: /alive
     envVars:
