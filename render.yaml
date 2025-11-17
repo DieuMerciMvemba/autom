@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: autom
+    name: autom_pro
     env: docker
     region: oregon 
     plan: free 
@@ -12,23 +12,23 @@ services:
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
         fromDatabase:
-          name: automDB
+          name: automPro
           property: host
       - key: DB_POSTGRESDB_DATABASE
         fromDatabase:
-          name: automDB
+          name: automPro
           property: database
       - key: DB_POSTGRESDB_PORT
         fromDatabase:
-          name: automDB
+          name: automPro
           property: port
       - key: DB_POSTGRESDB_USER
         fromDatabase:
-          name: automDB
+          name: automPro
           property: user
       - key: DB_POSTGRESDB_PASSWORD
         fromDatabase:
-          name: automDB
+          name: automPro
           property: password
       - key: PORT
         value: 5678
@@ -44,6 +44,6 @@ services:
         generateValue: true
 
 databases:
-  - name: automDB
+  - name: automPro
     region: oregon 
     plan: free
